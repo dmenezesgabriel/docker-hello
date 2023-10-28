@@ -7,7 +7,6 @@ services:
     command: "--default-authentication-plugin=mysql_native_password"
     volumes:
       - db_data:/var/lib/mysql
-    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=somewordpress
       - MYSQL_DATABASE=wordpress
@@ -21,8 +20,7 @@ services:
     volumes:
       - wp_data:/var/www/html
     ports:
-      - 80:80
-    restart: always
+      - 4555:80
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_USER=wordpress
