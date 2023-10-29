@@ -170,3 +170,7 @@
 - `docker-compose kill`: Kill containers
 - `docker-compose pause`: Pause containers
 - `docker-compose unpause`: Unpause containers
+
+## ECR
+
+- `docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) ECR_URI`
