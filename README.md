@@ -91,6 +91,11 @@
 - `docker build -t sample/node-server:1.0 .`: Build an image from a Dockerfile
 - `docker run --rm -d -p 3000:6000 sample/node-server:1.0`: Run a container from an image
 
+**send to dockerhub**:
+
+- `docker tag sample/node-server:1.0 dmenezesgabriel/node-server:latest`
+- `docker push dmenezesgabriel/node-server:latest`
+
 ## Storage
 
 ### Bind Mounts
